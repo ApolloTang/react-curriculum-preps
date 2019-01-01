@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Name Required</title>
+</head>
+<body>
+<script>
+
+//* ========================
+//* Immutability Refactoring
+//* ========================
+
+const list = [1,2,3]
+
+function double(_in) {
+  let _out = _in.map(item => item *2 )
+
+
+
+  // const C = _in.length
+  // let i = C
+  // while(i--) {
+  //   _in[i] = _in[i] * 2
+  // }
+  //
+  // _out = _in
+  return _out
+}
+
+console.log(double(list)) // [2,4,6]
+console.log(list) // [1,2,3]
+
+
+</script>
+</body>
+</html>
